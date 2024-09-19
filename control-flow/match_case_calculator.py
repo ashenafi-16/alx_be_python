@@ -17,5 +17,6 @@ match operation:
     case '*':
         result = num1 * num2
         print(f"The result is {result}")
+        
     case _:
         print('Unknown operation')
