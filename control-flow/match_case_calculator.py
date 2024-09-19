@@ -1,7 +1,7 @@
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-choice = input("Choose the operation (+, -, *, /): ")
-match choice:
+operation = input("Choose the operation (+, -, *, /): ")
+match operation:
     case '+':
         result = num1 + num2
         print(f"The result is {result}")
@@ -17,3 +17,5 @@ match choice:
     case '*':
         result = num1 * num2
         print(f"The result is {result}")
+    case _:
+        print('Unknown operation')
